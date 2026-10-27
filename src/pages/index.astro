@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import entidades from '../data/entidades.json';
+---
+
+<Layout 
+  title="Inicio - Orientación al Consumidor Financiero" 
+  description="Portal independiente con guías informativas, directorio de canales oficiales de bancos y prevención de estafas en Argentina."
+>
+  <section class="text-center py-12 px-4 bg-white rounded-2xl shadow-sm border border-slate-200 mb-10">
+    <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+      Portal Independiente y Gratuito
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight max-w-3xl mx-auto">
+      Orientación clara para tus trámites financieros en Argentina
+    </h1>
+    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+      Encontrá guías paso a paso, reconocé posibles intentos de estafa y accedé únicamente a los canales oficiales verificados de atención.
+    </p>
+
+    <div class="mt-6 max-w-xl mx-auto bg-amber-50 border-l-4 border-amber-500 p-4 rounded text-left text-sm text-amber-900">
+      <p class="font-bold">⚠️ Recuerde siempre:</p>
+      <p>Ninguna entidad bancaria o billetera virtual le solicitará sus contraseñas, claves token o datos de tarjeta por teléfono o redes sociales.</p>
+    </div>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="/directorio" class="px-6 py-3 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors shadow">
+        Consultar Directorio Oficial
+      </a>
+      <a href="/estafas" class="px-6 py-3 bg-red-50 text-red-700 font-medium rounded-lg border border-red-200 hover:bg-red-100 transition-colors">
+        Guía de Prevención de Estafas
+      </a>
+    </div>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6">Entidades Financieras y Organismos Registrados</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      {entidades.map((item) => (
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-slate-500 uppercase">{item.categoria}</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">{item.nombre}</h3>
+            <p class="text-slate-600 text-sm mb-4">{item.descripcion}</p>
+          </div>
+          <div>
+            <div class="border-t border-slate-100 pt-3 text-xs text-slate-500 mb-4">
+              <p><strong>Canal Oficial:</strong> {item.canalAtencion}</p>
+              <p><strong>Verificado:</strong> {item.fechaVerificacion}</p>
+            </div>
+            <a 
+              href={item.webOficial} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="block text-center py-2 px-4 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded font-medium text-sm hover:bg-emerald-100 transition"
+            >
+              Ir al Sitio Oficial ↗
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
