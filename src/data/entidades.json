@@ -1,0 +1,35 @@
+[
+  {
+    "id": "banco-nacion",
+    "nombre": "Banco de la Nación Argentina",
+    "categoria": "Bancos",
+    "descripcion": "Entidad bancaria pública nacional de la República Argentina.",
+    "webOficial": "https://www.bna.com.ar",
+    "canalAtencion": "0810-666-4444",
+    "tramitesFrecuentes": ["Blanqueo de PIN", "Desbloqueo de Home Banking", "Reclamo por tarjeta"],
+    "fuenteVerificada": "Banco Central de la República Argentina (BCRA)",
+    "fechaVerificacion": "2026-10-15"
+  },
+  {
+    "id": "mercado-pago",
+    "nombre": "Mercado Pago",
+    "categoria": "Billeteras Virtuales",
+    "descripcion": "Proveedor de Servicios de Pago (PSP) registrado en el BCRA.",
+    "webOficial": "https://www.mercadopago.com.ar",
+    "canalAtencion": "Sección de Ayuda dentro de la App Oficial",
+    "tramitesFrecuentes": ["Transferencia no acreditada", "Desconocimiento de cobro", "Cuenta suspendida"],
+    "fuenteVerificada": "Registro Oficial PSP - BCRA",
+    "fechaVerificacion": "2026-10-20"
+  },
+  {
+    "id": "bcra-usuarios",
+    "nombre": "BCRA - Usuarios Financieros",
+    "categoria": "Organismos Reguladores",
+    "descripcion": "Gerencia de Protección al Usuario Financiero del Banco Central.",
+    "webOficial": "https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp",
+    "canalAtencion": "Formulario oficial de reclamos no resueltos por bancos",
+    "tramitesFrecuentes": ["Reclamo de segundo nivel cuando el banco no responde en 10 días"],
+    "fuenteVerificada": "Sitio Oficial del Gobierno Argentino (.gob.ar)",
+    "fechaVerificacion": "2026-10-25"
+  }
+]
