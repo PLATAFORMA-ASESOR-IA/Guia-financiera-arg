@@ -8,7 +8,40 @@
     "canalAtencion": "0810-666-4444",
     "tramitesFrecuentes": ["Blanqueo de PIN", "Desbloqueo de Home Banking", "Reclamo por tarjeta"],
     "fuenteVerificada": "Banco Central de la República Argentina (BCRA)",
-    "fechaVerificacion": "2026-10-15"
+    "fechaVerificacion": "2026-10-28"
+  },
+  {
+    "id": "banco-galicia",
+    "nombre": "Banco Galicia",
+    "categoria": "Bancos",
+    "descripcion": "Banco privado líder en Argentina con atención a personas y empresas.",
+    "webOficial": "https://www.bancogalicia.com",
+    "canalAtencion": "0810-444-6500 / WhatsApp Oficial",
+    "tramitesFrecuentes": ["Problemas con Galicia App", "Desconocimiento de consumos", "Aumento de límites"],
+    "fuenteVerificada": "Sitio Oficial Banco Galicia",
+    "fechaVerificacion": "2026-10-28"
+  },
+  {
+    "id": "bbva-argentina",
+    "nombre": "Banco BBVA Argentina",
+    "categoria": "Bancos",
+    "descripcion": "Entidad bancaria privada con servicios digitales y sucursales en todo el país.",
+    "webOficial": "https://www.bbva.com.ar",
+    "canalAtencion": "0800-333-0303",
+    "tramitesFrecuentes": ["Clave Digital bloqueada", "Desconocimiento de cargos", "Solicitud de chequera"],
+    "fuenteVerificada": "Sitio Oficial BBVA Argentina",
+    "fechaVerificacion": "2026-10-28"
+  },
+  {
+    "id": "naranja-x",
+    "nombre": "Naranja X",
+    "categoria": "Billeteras Virtuales",
+    "descripcion": "Proveedor de Servicios de Pago (PSP) y tarjeta de crédito/débito.",
+    "webOficial": "https://www.narangax.com",
+    "canalAtencion": "Chat de ayuda desde la App Oficial",
+    "tramitesFrecuentes": ["Transferencias demoradas", "Problemas con tarjeta física", "Validación de identidad"],
+    "fuenteVerificada": "Sitio Oficial Naranja X",
+    "fechaVerificacion": "2026-10-28"
   },
   {
     "id": "mercado-pago",
@@ -19,17 +52,6 @@
     "canalAtencion": "Sección de Ayuda dentro de la App Oficial",
     "tramitesFrecuentes": ["Transferencia no acreditada", "Desconocimiento de cobro", "Cuenta suspendida"],
     "fuenteVerificada": "Registro Oficial PSP - BCRA",
-    "fechaVerificacion": "2026-10-20"
-  },
-  {
-    "id": "bcra-usuarios",
-    "nombre": "BCRA - Usuarios Financieros",
-    "categoria": "Organismos Reguladores",
-    "descripcion": "Gerencia de Protección al Usuario Financiero del Banco Central.",
-    "webOficial": "https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp",
-    "canalAtencion": "Formulario oficial de reclamos no resueltos por bancos",
-    "tramitesFrecuentes": ["Reclamo de segundo nivel cuando el banco no responde en 10 días"],
-    "fuenteVerificada": "Sitio Oficial del Gobierno Argentino (.gob.ar)",
-    "fechaVerificacion": "2026-10-25"
+    "fechaVerificacion": "2026-10-28"
   }
 ]
